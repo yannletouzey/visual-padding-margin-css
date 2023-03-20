@@ -12,7 +12,7 @@
     justify-content: space-around;
 }
 .box{
-    background: #f62a2a;
+    background: #e874d7;
     width: var(--width-box-);
     height: var(--width-box-);
     border: 1px solid #000;
