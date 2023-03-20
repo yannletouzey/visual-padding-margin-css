@@ -1,0 +1,55 @@
+:root{
+    --width-box-: 10rem;
+}
+.container{
+    width: 95%;
+    padding: 20px;
+    background: #e6e6e6;
+    border-radius: 2rem;
+}
+.box-one{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    background: #f62a2a;
+    width: var(--width-box-);
+    height: var(--width-box-);
+    border: 1px solid #000;
+}
+.box-css{
+    background: #2f2b2b;
+    width: calc(var(--width-box-) * 2);
+    height: var(--width-box-);
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+}
+.box-setting{
+    background: #68009498;
+    width: 70%;
+    height: 10rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.attribut{
+    margin-left: 1.5rem;
+    color: rgb(118, 171, 215);
+}
+.container-range{
+    display: flex;
+}
+label{
+    margin-right: 2rem;
+    color: rgb(118, 171, 215);
+    width: 4.5rem;
+}
+input[type=range]{
+    display: block;
+    width: 90%;
+}
