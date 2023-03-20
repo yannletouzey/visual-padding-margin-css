@@ -8,6 +8,13 @@
     background: #e6e6e6;
     border-radius: 2rem;
 }
+.box-container{
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .box-one{
     display: flex;
     justify-content: space-around;
@@ -16,15 +23,14 @@
     background: #e874d7;
     width: var(--width-box-);
     height: var(--width-box-);
-    border: 1px solid #000;
 }
 .box-css{
     background: #2f2b2b;
-    width: calc(var(--width-box-) * 2);
+    width: var(--width-box-);
     height: var(--width-box-);
     border: 1px solid #000;
     color: #fff;
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 1rem 1.5rem;
 }
 .box-setting{
