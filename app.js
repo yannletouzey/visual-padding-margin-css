@@ -18,6 +18,7 @@ valueBoxMargin.innerHTML = `<p>${rangeMargin.value}</p>`
 const valueBoxBorder = document.getElementById('box-value-border')
 valueBoxBorder.innerHTML = `<p>${rangeBorder.value}</p>`
 
+
 const valueBoxPadding = document.getElementById('box-value-padding')
 valueBoxPadding.innerHTML = `<p>${rangePadding.value}</p>`
 
@@ -45,7 +46,31 @@ const boxMargin = document.getElementById('box-margin')
 boxMargin.style.width = (parseInt(rangeWidth.value) + parseInt(rangeBorder.value) + parseInt(rangePadding.value) + parseInt(rangeMargin.value)) + "px"
 boxMargin.style.height = (parseInt(rangeHeight.value) + parseInt(rangeBorder.value) + parseInt(rangePadding.value) + parseInt(rangeMargin.value)) + "px"
 
-
+// Hover box-value => box
+valueBoxContent.addEventListener('mouseenter', () => {
+    box.style.backgroundColor = "#000"
+})
+valueBoxContent.addEventListener('mouseleave', () => {
+    box.style.backgroundColor = "#95d2fe"
+})
+valueBoxPadding.addEventListener('mouseenter', () => {
+    boxPadding.style.backgroundColor = "#000"
+})
+valueBoxPadding.addEventListener('mouseleave', () => {
+    boxPadding.style.backgroundColor = "#c1f978"
+})
+valueBoxBorder.addEventListener('mouseenter', () => {
+    boxBorder.style.backgroundColor = "#000"
+})
+valueBoxBorder.addEventListener('mouseleave', () => {
+    boxBorder.style.backgroundColor = "#f7cd73"
+})
+valueBoxMargin.addEventListener('mouseenter', () => {
+    boxMargin.style.backgroundColor = "#000"
+})
+valueBoxMargin.addEventListener('mouseleave', () => {
+    boxMargin.style.backgroundColor = "#be8202"
+})
 
 // Origin value
 valueTextWidth.innerHTML = rangeWidth.value
