@@ -7,6 +7,9 @@
     margin: auto;
     background: #e6e6e6;
     border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .box-container{
     width: 50%;
@@ -73,8 +76,7 @@
 .box-setting{
     background: #68009498;
     width: 70%;
-    height: 10rem;
-    margin: 3rem auto;
+    margin: 2rem auto;
     padding: 2rem;
     border-radius: 2rem;
     display: flex;
@@ -87,12 +89,54 @@
 }
 .container-range{
     display: flex;
+    margin: 6px 0;
 }
 label{
     margin-right: 2rem;
     width: 6.5rem;
 }
-input[type=range]{
-    display: block;
+
+
+.btn-slider {
+    -webkit-appearance: none;
     width: 90%;
+    margin: 10px auto;
+    height: 6px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    outline: none;
+    opacity: 0.4;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.btn-slider:hover {
+    opacity: 0.7; 
+}
+
+.btn-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 32px;
+    border: 0;
+    background-image: url('img/logo-short-cream.svg');
+    background-color: transparent;
+    box-shadow: none;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.btn-slider::-moz-range-thumb {
+    width: 30px;
+    height: 32px;
+    border: 0;
+    background-image: url('img/logo-short-cream.svg');
+    background-color: transparent;
+    box-shadow: none;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
