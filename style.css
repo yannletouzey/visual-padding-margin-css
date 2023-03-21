@@ -19,19 +19,56 @@
     display: flex;
     justify-content: space-around;
 }
-.box{
-    background: #e874d7;
-    width: var(--width-box-);
-    height: var(--width-box-);
+.box, .box-value-content{
+    position: absolute;
+    background: #95d2fe;
+}
+.box-padding, .box-value-padding{
+    position: absolute;
+    background: #c1f978;
+}
+.box-border, .box-value-border{
+    position: absolute;
+    background: #f7cd73;
+}
+.box-margin, .box-value-margin{
+    position: relative;
+    background: #be8202;
 }
 .box-css{
     background: #2f2b2b;
     width: var(--width-box-);
     height: var(--width-box-);
-    border: 1px solid #000;
     color: #fff;
     border-radius: 1rem;
     padding: 1rem 1.5rem;
+}
+.box-value-margin{
+    width: calc(var(--width-box-) + 4rem);
+    height: var(--width-box-);
+    border: 1px solid #000;
+}
+.box-value-border{
+    width: calc(var(--width-box-) + 1rem);
+    height: calc(var(--width-box-) - 3rem);
+    border: 1px solid #000;
+}
+.box-value-padding{
+    width: calc(var(--width-box-) - 2rem);
+    height: calc(var(--width-box-) - 6rem);
+    border: 1px solid #90bbff;
+}
+.box-value-content{
+    width: calc(var(--width-box-) - 5rem);
+    height: calc(var(--width-box-) - 9rem);
+    line-height: calc(var(--width-box-) - 9rem);
+    border: 1px solid #000;
+}
+.box-container:last-child p {
+    margin: 0 0.4rem;
+}
+.box-value-content{
+    text-align: center;
 }
 .box-setting{
     background: #68009498;
@@ -53,8 +90,7 @@
 }
 label{
     margin-right: 2rem;
-    color: rgb(118, 171, 215);
-    width: 6.2rem;
+    width: 6.5rem;
 }
 input[type=range]{
     display: block;
