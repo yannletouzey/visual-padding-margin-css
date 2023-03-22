@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sizingIndividual.css">
+        <title>Visuel padding margin</title>
+    </head>
+    <body>
+        <header>
+            <h1>Les modeles de boîtes <a href="./boxSizingIndividual.html">Box dimentionement individuel</a></h1>
+        </header>
+        <main>
+            <section class="container">
+                <section id="box-one" class="box-one">
+                    <div class="box-container">
+                        <div id="box-margin" class="box-margin"></div>
+                        <div id="box-border" class="box-border"></div>
+                        <div id="box-padding" class="box-padding"></div>
+                        <div id="box" class="box"></div>
+                    </div>
+                    <div class="box-container">
+                        <div id="box-css" class="box-css box-css-individual">
+                            <span id="box-top" class="box-top">.box {</span><br>
+                                <span id="width" class="width attribut">width: </span><span id="value-text-width" class="value value-width"></span>px;<br>
+                                <span id="height" class="height attribut">height: </span><span id="value-text-height" class="value value-height"></span>px;<br>
+                                <span id="padding" class="padding attribut">padding: </span><span id="value-text-padding-top" class="value value-padding-top"></span>px <span id="value-text-padding-right" class="value value-padding-right"></span>px <span id="value-text-padding-bottom" class="value value-padding-bottom"></span>px <span id="value-text-padding-left" class="value value-padding-left"></span>px;<br>
+                                <span id="margin" class="margin attribut">margin: </span><span id="value-text-margin-top" class="value value-margin-top"></span>px <span id="value-text-margin-right" class="value value-margin-right"></span>px <span id="value-text-margin-bottom" class="value value-margin-bottom"></span>px <span id="value-text-margin-left" class="value value-margin-left"></span>px;<br>
+                                <span id="border" class="border attribut">border: </span><span id="value-text-border-top" class="value value-border-top"></span>px <span id="value-text-border-right" class="value value-border-right"></span>px <span id="value-text-border-bottom" class="value value-border-bottom"></span>px <span id="value-text-border-left" class="value value-border-left"></span>px;<br>
+                                <span id="border-radius" class="border-radius attribut">border-radius: </span><span id="value-text-border-radius-top" class="value value-border-radius-top"></span>% <span id="value-text-border-radius-right" class="value value-border-radius-right"></span>% <span id="value-text-border-radius-bottom" class="value value-border-radius-bottom"></span>% <span id="value-text-border-radius-left" class="value value-border-radius-left"></span>%;<br>
+                            <span id="box-bottom" class="box-bottom">}</span>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <div id="box-value-margin" class="box-value-margin"></div>
+                        <div id="box-value-border" class="box-value-border"></div>
+                        <div id="box-value-padding" class="box-value-padding"></div>
+                        <div id="box-value-content" class="box-value-content"></div>
+                    </div>
+                </section>
+                <section id="box-two" class="box-two">
+                    <section id="box-setting" class="box-setting">
+                        <div class="container-range">
+                            <label for="range-width" id="label-range-width" class="label-range-width">Width :</label>
+                            <input type="range" name="range-width" id="range-width" class="range-width btn-slider" value="50" min="50" max="100">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-height" id="label-range-height" class="label-range-height">height :</label>
+                            <input type="range" name="range-height" id="range-height" class="range-height btn-slider" value="50" min="50" max="100">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-padding-top" id="label-range-padding-top" class="label-range-padding-top">Padding top :</label>
+                            <input type="range" name="range-padding-top" id="range-padding-top" class="range-padding-top btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-padding-right" id="label-range-padding-right" class="label-range-padding-right">Padding right :</label>
+                            <input type="range" name="range-padding-right" id="range-padding-right" class="range-padding-right btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-padding-bottom" id="label-range-padding-bottom" class="label-range-padding-bottom">Padding bottom :</label>
+                            <input type="range" name="range-padding-bottom" id="range-padding-bottom" class="range-padding-bottom btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-padding-left" id="label-range-padding-left" class="label-range-padding-left">Padding left :</label>
+                            <input type="range" name="range-padding-left" id="range-padding-left" class="range-padding-left btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-margin-top" id="label-range-margin-top" class="label-range-margin-top">Margin top :</label>
+                            <input type="range" name="range-margin-top" id="range-margin-top" class="range-margin-top btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-margin-right" id="label-range-margin-right" class="label-range-margin-right">Margin right :</label>
+                            <input type="range" name="range-margin-right" id="range-margin-right" class="range-margin-right btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-margin-bottom" id="label-range-margin-bottom" class="label-range-margin-bottom">Margin bottom :</label>
+                            <input type="range" name="range-margin-bottom" id="range-margin-bottom" class="range-margin-bottom btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-margin-left" id="label-range-margin-left" class="label-range-margin-left">Margin left :</label>
+                            <input type="range" name="range-margin-left" id="range-margin-left" class="range-margin-left btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-border-top" id="label-range-border-top" class="label-range-border-top">Border top :</label>
+                            <input type="range" name="range-border-top" id="range-border-top" class="range-border-top btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-border-right" id="label-range-border-right" class="label-range-border-right">Border right :</label>
+                            <input type="range" name="range-border-right" id="range-border-right" class="range-border-right btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-border-bottom" id="label-range-border-bottom" class="label-range-border-bottom">Border bottom :</label>
+                            <input type="range" name="range-border-bottom" id="range-border-bottom" class="range-border-bottom btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-border-left" id="label-range-border-left" class="label-range-border-left">Border left :</label>
+                            <input type="range" name="range-border-left" id="range-border-left" class="range-border-left btn-slider" value="0" min="0" max="30">
+                        </div>
+                        <div class="separation"></div>
+                        <div class="container-range">
+                            <label for="range-border-radius-top" id="label-range-border-radius-top" class="label-range-border-radius-top">Border-radius :</label>
+                            <input type="range" name="range-border-radius-top" id="range-border-radius-top" class="range-border-radius-top btn-slider" value="0" min="0" max="50">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-border-radius-right" id="label-range-border-radius-right" class="label-range-border-radius-right">Border-radius :</label>
+                            <input type="range" name="range-border-radius-right" id="range-border-radius-right" class="range-border-radius-right btn-slider" value="0" min="0" max="50">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-border-radius-bottom" id="label-range-border-radius-bottom" class="label-range-border-radius-bottom">Border-radius :</label>
+                            <input type="range" name="range-border-radius-bottom" id="range-border-radius-bottom" class="range-border-radius-bottom btn-slider" value="0" min="0" max="50">
+                        </div>
+                        <div class="container-range">
+                            <label for="range-border-radius-left" id="label-range-border-radius-left" class="label-range-border-radius-left">Border-radius :</label>
+                            <input type="range" name="range-border-radius-left" id="range-border-radius-left" class="range-border-radius-left btn-slider" value="0" min="0" max="50">
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="./js/sizingIndividual.js"></script>
+    </body>
+</html>
