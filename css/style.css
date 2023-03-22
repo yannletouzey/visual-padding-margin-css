@@ -162,7 +162,7 @@ label {
   width: 30px;
   height: 32px;
   border: 0;
-  background-image: url("img/logo-short-cream.svg");
+  background-image: url("../img/logo-short-cream.svg");
   background-color: transparent;
   box-shadow: none;
   background-size: contain;
@@ -175,7 +175,7 @@ label {
   width: 30px;
   height: 32px;
   border: 0;
-  background-image: url("img/logo-short-cream.svg");
+  background-image: url("../img/logo-short-cream.svg");
   background-color: transparent;
   box-shadow: none;
   background-size: contain;
