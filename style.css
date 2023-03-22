@@ -1,6 +1,9 @@
 :root {
   --width-box-: 10rem;
 }
+h1{
+  text-align: center;
+}
 .container {
   width: 95%;
   padding: 20px;
@@ -131,7 +134,7 @@ label {
 .label-range-margin{
   background: #be8202;
 }
-.separate{
+.separation{
   width: 98%;
   height: 0.05rem;
   background: #680094;

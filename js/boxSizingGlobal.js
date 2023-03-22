@@ -18,7 +18,6 @@ valueBoxMargin.innerHTML = `<p>${rangeMargin.value} margin</p>`
 const valueBoxBorder = document.getElementById('box-value-border')
 valueBoxBorder.innerHTML = `<p>${rangeBorder.value} border</p>`
 
-
 const valueBoxPadding = document.getElementById('box-value-padding')
 valueBoxPadding.innerHTML = `<p>${rangePadding.value} padding</p>`
 
@@ -180,7 +179,10 @@ rangeMargin.oninput = function() {
     boxMargin.style.height = (parseInt(rangeHeight.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value) + parseInt(rangeMargin.value)) + "px"
     boxMargin.style.borderRadius = 0
     if (parseInt(rangeMargin.value) == 0) {
-        boxMargin.style.borderRadius = `${parseInt(rangeBorderRadius.value) * 1.3}px`
+        boxMargin.style.borderRadius = `${parseInt(rangeBorderRadius.value)}px`
+        boxMargin.style.width = (parseInt(rangeWidth.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value) + parseInt(rangeMargin.value) - 20) + "px"
+        boxMargin.style.height = (parseInt(rangeHeight.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value) + parseInt(rangeMargin.value) - 20) + "px"
+    
     }
 }
 rangeBorderRadius.oninput = function() {
@@ -189,6 +191,8 @@ rangeBorderRadius.oninput = function() {
     boxPadding.style.borderRadius = `${rangeBorderRadius.value}%`
     boxBorder.style.borderRadius = `${rangeBorderRadius.value}%`
     if (parseInt(rangeMargin.value) == 0) {
-        boxMargin.style.borderRadius = `${parseInt(rangeBorderRadius.value) * 1.3}px`
+        boxMargin.style.borderRadius = `${parseInt(rangeBorderRadius.value)}px`
+        boxMargin.style.width = (parseInt(rangeWidth.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value) + parseInt(rangeMargin.value) - 20) + "px"
+        boxMargin.style.height = (parseInt(rangeHeight.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value) + parseInt(rangeMargin.value) - 20) + "px"
     }
 }
