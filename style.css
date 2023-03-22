@@ -183,3 +183,9 @@ label {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+footer{
+  display: flex;
+  justify-content: space-around;
+  height: 4rem;
+  align-items: center;
+}
