@@ -67,9 +67,22 @@ box.style.width = `${rangeWidth.value}px`
 box.style.height = `${rangeHeight.value}px`
 
 // Padding
-const boxPadding = document.getElementById('box-padding')
-boxPadding.style.width = `${rangeWidth.value}px`
-boxPadding.style.height = `${rangeHeight.value}px`
+    // Top
+const boxPaddingTop = document.getElementById('box-padding-top')
+boxPaddingTop.style.width = `${rangeWidth.value}px`
+boxPaddingTop.style.height = `${rangeHeight.value}px`
+    // Rigth
+const boxPaddingRight = document.getElementById('box-padding-rigth')
+boxPaddingRight.style.width = `${rangeWidth.value}px`
+boxPaddingRight.style.height = `${rangeHeight.value}px`
+    // Bottom
+const boxPaddingBottom = document.getElementById('box-padding-bottom')
+boxPaddingBottom.style.width = `${rangeWidth.value}px`
+boxPaddingBottom.style.height = `${rangeHeight.value}px`
+    // Left
+const boxPaddingLeft = document.getElementById('box-padding-left')
+boxPaddingLeft.style.width = `${rangeWidth.value}px`
+boxPaddingLeft.style.height = `${rangeHeight.value}px`
 
 // Border
 const boxBorder = document.getElementById('box-border')
@@ -77,11 +90,24 @@ boxBorder.style.width = `${rangeWidth.value}px`
 boxBorder.style.height = `${rangeHeight.value}px`
 
 // Margin
-const boxMargin = document.getElementById('box-margin')
+    // Top
+const boxMarginTop = document.getElementById('box-margin-top')
+boxMarginTop.style.width = `${rangeWidth.value}px`
+boxMarginTop.style.height = `${rangeHeight.value}px`
+    // Rigth
+const boxMarginRight = document.getElementById('box-margin-rigth')
+boxMarginRight.style.width = `${rangeWidth.value}px`
+boxMarginRight.style.height = `${rangeHeight.value}px`
+    // Bottom
+const boxMarginBottom = document.getElementById('box-margin-bottom')
+boxMarginBottom.style.width = `${rangeWidth.value}px`
+boxMarginBottom.style.height = `${rangeHeight.value}px`
+    // Left
+const boxMarginLeft = document.getElementById('box-margin-left')
+boxMarginLeft.style.width = `${rangeWidth.value}px`
+boxMarginLeft.style.height = `${rangeHeight.value}px`
 // boxMargin.style.width = (parseInt(rangeWidth.value) + parseInt(rangeBorder.value) + parseInt(rangePadding.value) + parseInt(rangeMargin.value)) + "px"
 // boxMargin.style.height = (parseInt(rangeHeight.value) + parseInt(rangeBorder.value) + parseInt(rangePadding.value) + parseInt(rangeMargin.value)) + "px"
-boxMargin.style.width = `${rangeWidth.value}px`
-boxMargin.style.height = `${rangeHeight.value}px`
 
 // Hover box-value => box
 // valueBoxContent.addEventListener('mouseenter', () => {
@@ -195,37 +221,27 @@ rangeWidth.oninput = function() {
     box.style.width = rangeWidth.value + "px"
     valueBoxContent.innerHTML = `<p>${rangeWidth.value} x ${rangeHeight.value}</p>`
     boxPadding.style.width = (parseInt(rangeWidth.value) + parseInt(rangePaddingRight.value) + parseInt(rangePaddingLeft.value)) + "px"
-    // boxBorder.style.width = (parseInt(rangeWidth.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value)) + "px"
-    // boxMargin.style.width = (parseInt(rangeWidth.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value) + parseInt(rangeMargin.value)) + "px"
 }
 rangeHeight.oninput = function() {
     valueTextHeight.innerHTML = rangeHeight.value
     box.style.height = rangeHeight.value + "px"
     valueBoxContent.innerHTML = `<p>${rangeWidth.value} x ${rangeHeight.value}</p>`
     boxPadding.style.height = (parseInt(rangeHeight.value) + parseInt(rangePaddingTop.value)) + "px"
-    // boxBorder.style.height = (parseInt(rangeHeight.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value)) + "px"
-    // boxMargin.style.height = (parseInt(rangeHeight.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value) + parseInt(rangeMargin.value)) + "px"
 }
 rangePaddingTop.oninput = function() {
-    let newPaddingHeight = (parseInt(rangePaddingTop.value)) / 2
-    let newPaddingWidth = (parseInt(rangePaddingTop.value)) / 2
+    let newPaddingHeight = (parseInt(rangePaddingTop.value) + parseInt(rangePaddingRight.value) / 2)
+    let newPaddingWidth = (parseInt(rangePaddingRight.value) / 2)
     valueTextPaddingTop.innerHTML = rangePaddingTop.value
     valueBoxPadding.innerHTML = `<p>${rangePaddingTop.value} padding</p>`
     boxPadding.style.height = (parseInt(rangeHeight.value) + parseInt(rangePaddingTop.value)) + "px"
     boxPadding.style.width = (parseInt(rangeWidth.value) + parseInt(rangePaddingRight.value)) + "px"
     if (rangePaddingTop.value > 0) {
-        boxPadding.style.transform = `translate(-${newPaddingHeight}px, ${rangePaddingRight.value}px)`
+        boxPadding.style.transform = `translateY(-${newPaddingHeight}px)`
     }
-    // boxPadding.style.height = (parseInt(rangeHeight.value) + parseInt(rangePadding.value)) + "px"
-
-    // boxBorder.style.width = (parseInt(rangeWidth.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value)) + "px"
-    // boxBorder.style.height = (parseInt(rangeHeight.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value)) + "px"
-    // boxMargin.style.width = (parseInt(rangeWidth.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value) + parseInt(rangeMargin.value)) + "px"
-    // boxMargin.style.height = (parseInt(rangeHeight.value) + parseInt(rangePadding.value) + parseInt(rangeBorder.value) + parseInt(rangeMargin.value)) + "px"
 }
 rangePaddingRight.oninput = function() {
     let newPaddingRight = parseInt(rangePaddingRight.value) / 2
-    valueTextPaddingTop.innerHTML = rangePaddingRight.value
+    valueTextPaddingRight.innerHTML = rangePaddingRight.value
     valueBoxPadding.innerHTML = `<p>${rangePaddingRight.value} padding</p>`
     boxPadding.style.width = (parseInt(rangeWidth.value) + parseInt(rangePaddingRight.value)) + "px"
     boxPadding.style.height = (parseInt(rangeHeight.value) + parseInt(rangePaddingTop.value)) + "px"

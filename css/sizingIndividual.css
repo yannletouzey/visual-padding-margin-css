@@ -1,3 +1,35 @@
 .box-css-individual{
   width: calc(var(--width-box-) + 4rem);
 }
+.box-padding-top{
+  position: absolute;
+  background: #c1f978;
+}
+.box-padding-rigth{
+  position: absolute;
+  background: #c1f978;
+}
+.box-padding-bottom{
+  position: absolute;
+  background: #c1f978;
+}
+.box-padding-left{
+  position: absolute;
+  background: #c1f978;
+}
+.box-margin-top{
+  position: relative;
+  background: #be8202;
+}
+.box-margin-rigth{
+  position: relative;
+  background: #be8202;
+}
+.box-margin-bottom{
+  position: relative;
+  background: #be8202;
+}
+.box-margin-left{
+  position: relative;
+  background: #be8202;
+}
