@@ -1,5 +1,6 @@
 :root {
   --width-box-: 10rem;
+  font-family: sans-serif;
 }
 h1{
   text-align: center;
@@ -33,6 +34,9 @@ h1{
 .box-value-padding {
   position: absolute;
   background: #c1f978;
+}
+.box-value-padding {
+/* top: 1px; */
 }
 .box-border,
 .box-value-border {
