@@ -1,5 +1,9 @@
 :root {
   --width-box-: 10rem;
+  --color-padding: #c1f978;
+  --color-content: #95d2fe;
+  --color-border: #f7cd73;
+  --color-margin: #be8202;
   font-family: sans-serif;
 }
 h1{
@@ -9,7 +13,7 @@ h1{
   width: 95%;
   padding: 20px;
   margin: auto;
-  background: #e6e6e6;
+  background-color: #e6e6e6;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
@@ -28,28 +32,25 @@ h1{
 .box,
 .box-value-content {
   position: absolute;
-  background: #95d2fe;
+  background-color: var(--color-content);
 }
 .box-padding,
 .box-value-padding {
   position: absolute;
-  background: #c1f978;
-}
-.box-value-padding {
-/* top: 1px; */
+  background-color: var(--color-padding);
 }
 .box-border,
 .box-value-border {
   position: absolute;
-  background: #f7cd73;
+  background-color: var(--color-border);
 }
 .box-margin,
 .box-value-margin {
   position: relative;
-  background: #be8202;
+  background-color: var(--color-margin);
 }
 .box-css {
-  background: #2f2b2b;
+  background-color: #2f2b2b;
   width: var(--width-box-);
   height: var(--width-box-);
   color: #fff;
@@ -84,7 +85,7 @@ h1{
   text-align: center;
 }
 .box-setting {
-  background: #68009498;
+  background-color: #68009498;
   width: 70%;
   margin: 2rem auto;
   padding: 2rem;
@@ -97,16 +98,16 @@ h1{
   margin-left: 1.5rem;
 }
 .width, .height{
-  color: #95d2fe;
+  color: var(--color-content);
 }
 .padding{
-  color: #c1f978;
+  color: var(--color-padding);
 }
 .border{
-  color: #f7cd73;
+  color: var(--color-border);
 }
 .margin{
-  color: #be8202;
+  color: var(--color-margin);
 }
 .border-radius{
   color: #ce64fb98;
@@ -125,16 +126,16 @@ label {
 }
 .label-range-width,
 .label-range-height {
-  background: #95d2fe;
+  background-color: var(--color-content);
 }
 .label-range-padding{
-  background: #c1f978;
+  background-color: var(--color-padding);
 }
 .label-range-border{
-  background: #f7cd73;
+  background-color: var(--color-border);
 }
 .label-range-margin{
-  background: #be8202;
+  background-color: var(--color-margin);
 }
 .separation {
   display: flex;
@@ -151,7 +152,7 @@ label {
   margin: 10px auto;
   height: 6px;
   border-radius: 5px;
-  background: #ffffff;
+  background-color: #ffffff;
   outline: none;
   opacity: 0.4;
   -webkit-transition: 0.2s;
