@@ -139,7 +139,7 @@ label {
 }
 .separation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 90%;
   padding-bottom: 0.2rem;
   background-color: #680094;
