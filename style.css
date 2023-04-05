@@ -16,7 +16,6 @@ h1{
 }
 .box-container {
   width: 50%;
-  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +91,6 @@ h1{
 }
 .attribut {
   margin-left: 1.5rem;
-  /* color: rgb(118, 171, 215); */
 }
 .width, .height{
   color: #95d2fe;
@@ -134,11 +132,14 @@ label {
 .label-range-margin{
   background: #be8202;
 }
-.separation{
-  width: 98%;
-  height: 0.05rem;
-  background: #680094;
+.separation {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  padding-bottom: 0.2rem;
+  background-color: #680094;
   margin: 0.6rem auto;
+  border-radius: 1rem;
 }
 .btn-slider {
   -webkit-appearance: none;
