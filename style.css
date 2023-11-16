@@ -4,6 +4,7 @@
   --color-content: #95d2fe;
   --color-border: #f7cd73;
   --color-margin: #be8202;
+  --color-border-radius: #dea5f698;
   font-family: sans-serif;
 }
 h1{
@@ -110,7 +111,7 @@ h1{
   color: var(--color-margin);
 }
 .border-radius{
-  color: #ce64fb98;
+  color: var(--color-border-radius);
 }
 .container-range {
   display: flex;
@@ -118,7 +119,7 @@ h1{
 }
 label {
   margin-right: 1.5rem;
-  width: 6.8rem;
+  width: 7.6rem;
   text-align: center;
   display: flex;
   align-items: center;
